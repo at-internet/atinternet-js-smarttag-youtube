@@ -1,0 +1,10 @@
+{
+  "name":"ATInternetYouTube",
+  "description": "Rich Media measurement for YouTube players",
+  "lazyload": false,
+  "public": true,
+  "type": "plugins",
+  "dependencies": ["Tracker"],
+  "loadOrder": ["youtube.js"],
+  "config": {}
+}

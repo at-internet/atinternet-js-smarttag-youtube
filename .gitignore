@@ -1,0 +1,9 @@
+.DS_Store
+.nodemonignore
+.sass-cache/
+.bower-*/
+.idea/
+.tmp
+.tmp/
+node_modules/
+bower_components/

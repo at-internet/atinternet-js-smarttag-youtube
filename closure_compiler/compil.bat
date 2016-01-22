@@ -1,0 +1,1 @@
+java -jar compiler.jar --compilation_level SIMPLE_OPTIMIZATIONS --js merge.js --js_output_file final.js --formatting=pretty_print

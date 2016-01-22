@@ -1,0 +1,45 @@
+{
+  "name": "ATInternetYouTube",
+  "version": "1.0.0",
+  "description": "Rich Media measurement for YouTube players",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-karma": "^0.8.3",
+    "grunt-mocha": "^0.4.11",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-closure-compiler": "0.0.21",
+    "grunt-preprocess": "^5.0.1",
+    "karma": "^0.12.21",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.2.6",
+    "karma-junit-reporter": "^0.2",
+    "karma-html-reporter": "^0.2",
+    "karma-mocha": "^0.1.7",
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "tag",
+    "plugin",
+    "player",
+    "iframe",
+    "flash",
+    "playlist",
+    "media",
+    "action"
+  ],
+  "author": "AT Internet",
+  "license": "MIT"
+}
