@@ -15,7 +15,7 @@ First of all, you must download our JavaScript library from [Tag Composer].
 Tag Composer allows you to configure your SmartTag:
 
 * Set up your tagging perimeter/scope (site, domain used to write cookies, etc.).
-* Select desired features via configurable plugins.
+* Select desired features via configurable plugins. **Rich Media plugin is mandatory**. 
 
 Once the library is set up, you can download it and insert it with this plugin into the source code of the HTML page to be tagged.
 
@@ -23,7 +23,7 @@ Once the library is set up, you can download it and insert it with this plugin i
 
 Tracker initialisation is done via the instantiation of a new ATInternet.Tracker.Tag object:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head lang="en">
@@ -47,7 +47,7 @@ Tracker initialisation is done via the instantiation of a new ATInternet.Tracker
 You can load our JavaScript library asynchronously. However, this requires an adaptation in your tagging.
 Check out the [Asynchronous tag] for an overview of the functionality . 
 
-```
+```html
 <script type="text/javascript">
 window.ATInternet = {
     onTrackerLoad:function(){
@@ -79,7 +79,7 @@ In order to track data, you have to define some media properties as objects when
   - **_playerId :_** Player ID (to be added when using several players).
   - **_mediaLevel2 :_** Level 2 site in which the content is located.
   - **_mediaLabel :_** Name/label of content (use “::” if needed) or of a post-roll ad (do not use “::”) ; **_mandatory_**.
-  - **_previousMedia :_** Name/label of content linked to a post-roll ad; **_mandatory when using “ypost” type_**.
+  - **_previousMedia :_** Name/label of content linked to a post-roll ad; **_mandatory when using “vpost” type_**.
   - **_refreshDuration :_** Refresh duration period (optional in seconds, but necessary for calculating detailed durations).
   - **_duration :_** Total duration of content in seconds (leave empty if L= “Live”). The duration must be inferior to 86400 ; **_mandatory when using a “clip”-type broadcast_**.
   - **_isEmbedded :_** On an external website ? (“true” or “false”)
@@ -106,7 +106,7 @@ var media = {
 
 #### Tagging with Flash YouTube player
 
-```
+```html
 <!-- 1. This code loads the main AT Internet library. -->
 <script type="text/javascript" src="http://www.site.com/smarttag.js"></script>
 
@@ -167,7 +167,7 @@ function onYouTubePlayerReady(playerId) {
     
 #### Tagging with iFrame YouTube player
 
-```
+```html
 <!-- 1. This code loads the main AT Internet library. -->
 <script type="text/javascript" src="http://www.site.com/smarttag.js"></script>
 
@@ -259,7 +259,7 @@ function onPlayerReady(event) {
 
 #### Tagging with asynchronous tag and iFrame YouTube player
 
-```
+```html
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div id="player"></div>
 ```
